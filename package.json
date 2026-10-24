@@ -1,0 +1,26 @@
+{
+  "name": "carlos-santana-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host 127.0.0.1 --port 3100",
+    "generate": "nuxt generate",
+    "preview": "node scripts/preview.mjs",
+    "typecheck": "nuxt typecheck",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "nuxt": "4.6.2",
+    "vue": "^3.5.0",
+    "vue-router": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0",
+    "vue-tsc": "^3.0.0"
+  },
+  "engines": { "node": ">=22" }
+}

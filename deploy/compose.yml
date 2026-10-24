@@ -1,0 +1,19 @@
+name: carlos-portfolio
+services:
+  portfolio:
+    image: carlos-portfolio:local
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${PORTFOLIO_PORT:-8095}:80"
+    mem_limit: 64m
+    cpus: 0.25
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"

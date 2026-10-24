@@ -1,0 +1,8 @@
+# Exemplo para Caddy executado no HOST da VPS.
+# Trocar portfolio.example.com pelo domínio real e confirmar a porta disponível.
+# Se o Caddy estiver em container, adaptar a rede/upstream antes de usar.
+# Este arquivo não foi aplicado à VPS.
+portfolio.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:8095
+}
