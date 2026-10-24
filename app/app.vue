@@ -147,7 +147,24 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
-      <section id="contato" class="contact-section section-padding" aria-labelledby="contact-title"><div class="shell"><p class="eyebrow section-eyebrow">{{ t.contactEyebrow }}</p><div class="contact-heading"><h2 id="contact-title">{{ t.contactHeading }}<br><span>{{ t.contactHeadingAccent }}</span></h2><span class="contact-flower" aria-hidden="true">✳</span></div><p class="contact-description">{{ t.contactText }}</p><div class="contact-bottom"><div class="email-group"><a class="button button-primary" :href="`mailto:${contact.email}`">{{ t.emailCta }}<AppIcon /></a><button class="copy-button" type="button" :aria-label="t.copy" @click="copyEmail"><AppIcon name="copy" /></button></div><div class="social-links"><a :href="contact.linkedin" target="_blank" rel="noopener noreferrer"><AppIcon name="linkedin" />LinkedIn<AppIcon /></a><a :href="contact.github" target="_blank" rel="noopener noreferrer"><AppIcon name="github" />GitHub<AppIcon /></a></div></div><a class="email-address" :href="`mailto:${contact.email}`">{{ contact.email }}</a></div></section>
+      <section id="contato" class="contact-section section-padding" aria-labelledby="contact-title">
+        <div class="shell">
+          <p class="eyebrow section-eyebrow">{{ t.contactEyebrow }}</p>
+          <div class="contact-heading"><h2 id="contact-title">{{ t.contactHeading }}<br><span>{{ t.contactHeadingAccent }}</span></h2><span class="contact-flower" aria-hidden="true">✳</span></div>
+          <p class="contact-description">{{ t.contactText }}</p>
+          <div class="contact-bottom">
+            <div class="contact-actions">
+              <a class="button button-primary" :href="contact.whatsapp" target="_blank" rel="noopener noreferrer" :aria-label="t.whatsappLabel"><AppIcon name="chat" />{{ t.whatsappCta }}<AppIcon /></a>
+              <div class="email-group">
+                <a class="button button-secondary" :href="`mailto:${contact.email}`"><AppIcon name="mail" />{{ t.emailCta }}</a>
+                <button class="copy-button" type="button" :aria-label="t.copy" @click="copyEmail"><AppIcon name="copy" /></button>
+              </div>
+            </div>
+            <div class="social-links"><a :href="contact.linkedin" target="_blank" rel="noopener noreferrer"><AppIcon name="linkedin" />LinkedIn<AppIcon /></a><a :href="contact.github" target="_blank" rel="noopener noreferrer"><AppIcon name="github" />GitHub<AppIcon /></a></div>
+          </div>
+          <a class="email-address" :href="`mailto:${contact.email}`">{{ contact.email }}</a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="#top" aria-label="Carlos Santana Nunes — início">cs<span>.</span></a><p>© {{ new Date().getFullYear() }} Carlos Santana Nunes<span>{{ t.footerNote }}</span></p><a class="back-top mono" href="#top">{{ t.backTop }}<span aria-hidden="true">↑</span></a></div></footer>

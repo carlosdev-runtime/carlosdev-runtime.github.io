@@ -2,6 +2,7 @@ export type Language = 'pt' | 'en'
 
 export const contact = {
   email: 'carlos_santana-max@hotmail.com',
+  whatsapp: 'https://wa.me/5541997145296',
   linkedin: 'https://www.linkedin.com/in/carlos-santana-b53576101/',
   github: 'https://github.com/CARLOSCSN',
 }
@@ -54,7 +55,8 @@ export const content = {
     earlierLabel: 'ANTES DISSO / 2014 — 2021', earlierText: 'CodeIT Solutions, SAMCORP, Agrotopus, Meta, CHECKMOB, Weevex e Sage. Do suporte N3 ao desenvolvimento de sistemas para logística, agronegócio, seguros e serviços financeiros.',
     contactEyebrow: '04 / PRÓXIMA CONVERSA', contactHeading: 'Um problema interessante', contactHeadingAccent: 'começa com uma conversa.',
     contactText: 'Vamos conversar sobre engenharia, produtos digitais e desafios de software.',
-    emailCta: 'Vamos conversar', copy: 'Copiar e-mail', copied: 'E-mail copiado.', copyFailed: 'Não foi possível copiar. Use o link de e-mail ao lado.',
+    whatsappCta: 'Conversar pelo WhatsApp', whatsappLabel: 'Conversar pelo WhatsApp (nova aba)',
+    emailCta: 'Enviar e-mail', copy: 'Copiar e-mail', copied: 'E-mail copiado.', copyFailed: 'Não foi possível copiar. Use o link de e-mail ao lado.',
     footerNote: 'Feito com intenção. Da arquitetura à produção.', backTop: 'Voltar ao topo',
     seoDescription: 'Carlos Santana Nunes. Mais de 12 anos em tecnologia. C#/.NET, sistemas distribuídos e engenharia de software da arquitetura à produção.',
   },
@@ -105,7 +107,8 @@ export const content = {
     earlierLabel: 'EARLIER / 2014 — 2021', earlierText: 'CodeIT Solutions, SAMCORP, Agrotopus, Meta, CHECKMOB, Weevex, and Sage. From L3 support to software development for logistics, agribusiness, insurance, and financial services.',
     contactEyebrow: '04 / NEXT CONVERSATION', contactHeading: 'An interesting challenge', contactHeadingAccent: 'starts with a conversation.',
     contactText: 'Let’s talk about engineering, digital products, and software challenges.',
-    emailCta: 'Let’s talk', copy: 'Copy email', copied: 'Email copied.', copyFailed: 'Could not copy. Please use the email link next to this button.',
+    whatsappCta: 'Chat on WhatsApp', whatsappLabel: 'Chat on WhatsApp (new tab)',
+    emailCta: 'Send email', copy: 'Copy email', copied: 'Email copied.', copyFailed: 'Could not copy. Please use the email link next to this button.',
     footerNote: 'Built with intent. From architecture to production.', backTop: 'Back to top',
     seoDescription: 'Carlos Santana Nunes. Over 12 years in technology. C#/.NET, distributed systems, and software engineering from architecture to production.',
   },

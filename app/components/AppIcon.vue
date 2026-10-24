@@ -1,5 +1,5 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ name?: 'arrow' | 'download' | 'github' | 'linkedin' | 'copy' | 'plus' | 'check' | 'menu' | 'close' | 'mail' }>(), { name: 'arrow' })
+withDefaults(defineProps<{ name?: 'arrow' | 'download' | 'github' | 'linkedin' | 'copy' | 'plus' | 'check' | 'menu' | 'close' | 'mail' | 'chat' }>(), { name: 'arrow' })
 const paths = {
   arrow: 'M5 19 19 5M5 5h14v14',
   download: 'M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5',
@@ -11,6 +11,7 @@ const paths = {
   menu: 'M3 7h18M3 17h18',
   close: 'm6 6 12 12M6 18 18 6',
   mail: 'M3 5h18v14H3zM3 6l9 7 9-7',
+  chat: 'M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z',
 }
 </script>
 

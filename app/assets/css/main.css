@@ -202,7 +202,14 @@ h1 .hero-accent{color:var(--green)}
 .contact-heading h2>span{color:#637c43}
 .contact-flower{font-size:135px;line-height:1;display:block;color:#688642;flex-shrink:0;font-family:Arial,sans-serif}
 .contact-description{font-size:14px;color:#506637;max-width:450px;margin-top:30px}
-.contact-bottom{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-top:36px}
+.contact-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:30px;margin-top:36px}
+.contact-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.contact-section .contact-actions .button{justify-content:center;gap:10px;min-height:52px;min-width:0;padding:15px 18px;font-size:12px;white-space:nowrap}
+.contact-actions .button-secondary{background:transparent;border-color:#697f4b;color:#26371c}
+.contact-actions .copy-button{border-color:#697f4b}
+.contact-actions .button-secondary:hover{background:#b9d97b;border-color:#435b2d}
+.contact-actions .button:active{transform:translateY(1px)}
+.contact-actions .button-primary:focus-visible{outline-color:#1e2b15}
 .email-group{display:flex;gap:10px;align-items:center}
 .contact-section .button-primary{background:#1e2b15;color:#d8ecb7;min-width:210px}
 .contact-section .button-primary:hover{background:#314426}
@@ -274,4 +281,7 @@ html[lang=en] .hero-note{max-width:455px}
   .email-address{font-size:12px}
   .footer-inner>p{font-size:10px;max-width:calc(100% - 50px)}
   .back-top{font-size:10px}
+  .contact-actions{display:grid;grid-template-columns:minmax(0,1fr);width:100%}
+  .contact-actions .email-group{display:grid;grid-template-columns:minmax(0,1fr) 52px}
+  .contact-actions .copy-button{width:52px;height:52px}
 }
