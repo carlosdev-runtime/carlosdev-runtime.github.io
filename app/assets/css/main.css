@@ -37,7 +37,8 @@ svg{display:block;width:24px;height:24px;flex-shrink:0}
 .header-social svg{height:17px;width:17px}
 .header-social:hover{color:var(--green)}
 .menu-toggle{display:none;padding:8px;background:none;border:0}
-.mobile-nav{padding-block:12px 28px}
+.mobile-nav{display:none;padding-block:12px 28px}
+@media(max-width:740px){.mobile-nav{display:block}}
 .mobile-nav a{display:flex;align-items:center;gap:22px;border-top:1px solid var(--line);padding:16px 0}
 .mobile-nav a .mono{color:var(--green)}
 .mobile-nav a svg{margin-left:auto;width:18px}
