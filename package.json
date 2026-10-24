@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "preview": "node scripts/preview.mjs",
     "typecheck": "nuxt typecheck",
+    "validate:static": "node scripts/verify-static.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
